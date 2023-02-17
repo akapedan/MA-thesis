@@ -1,0 +1,24 @@
+%
+% File: chap05.tex
+% Author: Your Name
+% Description: Discussion
+%
+\let\textcircled=\pgftextcircled
+\chapter{Discussion}
+\label{chap:intro}
+
+\section{Contribution to Existing Research}
+
+\initial{I}n this chapter, we discuss and compare the results of our thesis with the findings of the existing literature on greenium in the primary market. The second part of the section will discuss potential limitations of the present study, followed by a comment on possible future research directions.
+
+We employed a total of 11 causal forests to measure the average treatment effect of a green bond on its yield at issuance. In addition, we also sought to uncover potential heterogeneities in the underlying treatment effects. All of our results support the greenium hypothesis. Specifically, the average treatment effect estimates range from -0.186\% to -1.032\%, or in financial jargon, from 18.6 to 103.2 basis points, with a central tendency of -0.43\%. Therefore, this paper contributes to the literature by using a novel machine learning technique, i.e. causal forests, to estimate a statistically and economically significant greenium effect in the primary bond market. Moreover, to the best of our knowledge, our study is the first to estimate and uncover heterogeneity in treatment effects for green bonds. This heterogeneity is due to the following drivers: Green bonds that achieve a higher greenium tend to have a longer maturity, are issued with an annual coupon in the period 2013-2016, do not necessarily operate in the financial sector, and are predominantly issued in euros instead of U.S. dollars. Therefore, we complement the findings of (1) \citet{caramichael2022green} who concluded that the greenium is unevenly distributed and (2) \citet{gianfrate2019green}'s results which suggest that issuers operating mainly in the utilities and energy sector achieve a higher average advantage. In addition, our CBI subset analysis also complements previous evidence suggesting that the CBI certified green bonds fetch a higher premium \citep{baker2018financing,fatica2021pricing}. Last but not least, our study provides evidence to the causal machine learning literature that the failure of the i.i.d assumption for the outcome variable has a negative effect on the accuracy of the causal forest average treatment effect estimate.
+
+\section{Limitations}
+
+Like in any study, the present thesis has its limitations. First, an important limitation of our study is that we do not adjust our outcome variable, i.e. the offer yield at issuance, for the risk-free interest rate. The reason for this is that, unfortunately, these data were not available to us on Eikon Refinitiv. As a consequence, our results may be biased upward. Second, also the for the other two rating agencies, i.e. S\&P and Fitch, were not available. Thus, our rating bias is probably upward biased. Third, due to liquidity reasons, we restrict our sample to large bonds with an issue size of at least USD 500 million. Therefore, our study may lack external validity. Fourth, we only use the bond universe of the Eikon Refinitiv database, which does not cover the entire global universe and therefore exerts an additional negative impact on external validity.
+
+\section{Future Research}
+
+There are several fruitful avenues for future researchers. In our opinion, most effort should be directed to data collection. There may still be important covariates respectively confounders that are measured and available in databases. For example, a bond that is an index constituent may experience increased demand due to products derived from the index. Therefore, an index inclusion variable could provide further valuable insights. Other examples include measuring different shades of green or additional ESG flags. In particular, measuring the impact of the 2019 European Union Green Bond Taxonomy could be interesting. There are also three other types of sustainable bonds, namely social bonds, sustainability bonds and sustainability-linked bonds. According to expert opinions we obtained from the Swiss stock exchange SIX, especially the latter could make an important contribution to sustainable financing in the years to come.
+
+
